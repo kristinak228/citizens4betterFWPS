@@ -1,44 +1,7 @@
 /*** Used for general body ***/
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Open Sans", sans-serif;}
 
-header {
-    padding: 5px;
-    background-color: aliceblue;
-}
-
-/*** Used for top nav bar ***/
-ul {
-    /* removes numbered or bullet point lists*/
-    list-style-type: none;
-    margin: 0;
-    /* space between container and text */
-    padding: 5px;
-    /* specifies what happens when text is too large for it's container */
-    overflow: hidden;
-    background-color: #303B97;
-    font-family: "Open Sans", sans-serif;
-    /* no matter how the page scrolls, this will stay put */
-    position: fixed;
-    width: 100%;
-  }
-  
-  li {
-    /* specifies that all elements in list should float next to one another */
-    float: left;
-  }
-  
-  li a {
-    /* displays an element on a new line, takes up the whole width */
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    /* can underline, overline, or put a line through text */
-    text-decoration: none;
-  }
-
 /*** Used for bottom footer ***/
-
   .footer1 {
     /* add extra fluff */
     margin: 0;
@@ -68,19 +31,15 @@ ul {
     text-decoration: none;
 }
 
-#body {
-    padding-bottom: -100px;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 footer {
-    margin-top: -100px;
-    
-    width: 100%;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
+    flex: 0 0 50px;
+    margin-top: auto;
 }
 
 span {
