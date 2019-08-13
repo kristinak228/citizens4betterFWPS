@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+  }
+  
+/* Clear floats after the columns */
+.col-container {
+    display: table;
+    width: 100%;
+}
+
+/* Create three equal columns that floats next to each other */
+.col {
+    width: 33.33%;
+    padding: 10px;
+    display: table-cell;
+    text-align: justify;
+}
+  
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }  
+}
