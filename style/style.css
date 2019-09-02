@@ -6,6 +6,9 @@ html, body {
     margin: 0;
 }
 
+/*** Used for carousel ***/
+.mySlides {display:none;}
+
 /*** Used for title ***/
 .title {
     background-color: rgb(243, 243, 243);
