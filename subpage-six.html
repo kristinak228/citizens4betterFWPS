@@ -10,6 +10,12 @@
 <link rel="stylesheet" href="style/style.css">
 <link rel="stylesheet" href="style/navbar.css">
 <link rel="stylesheet" href="style/columns.css">
+<link rel="stylesheet" href="style/contact-form.css">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Contact Form</title>
+</head>
 
 <body>
     <!-- NAVBAR -->
@@ -34,7 +40,30 @@
     </div>
 
     <!-- Add a feedback snippet here! -->
+    <header class="body">
+    </header>
 
+    <section class="body">
+        <form method="post" action="index.php">
+        
+            <label>Name</label>
+            <input name="name" placeholder="Type Here">
+                    
+            <label>Email</label>
+            <input name="email" type="email" placeholder="Type Here">
+                    
+            <label>Message</label>
+            <textarea name="message" placeholder="Type Here"></textarea>
+                    
+            <input id="submit" name="submit" type="submit" value="Submit">
+                
+        </form>
+    </section>
+
+    <!--
+    <footer class="body">
+    </footer>
+    
     <div class="w3-row-padding">
         <div class="col">
           <p><i>Make Yourselves Heard</i></p>
@@ -57,6 +86,7 @@
                 This will ensure that they have a complete understanding of your concerns or suggestions.
         </div>
     </div>
+    -->
 
     <!-- FOOTER -->
     <footer>
