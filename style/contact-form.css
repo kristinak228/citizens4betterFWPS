@@ -59,11 +59,12 @@ input:focus, textarea:focus {
 #submit {
     width:127px;
     height:38px;
-    background:url(images/submit.jpg);
+  /*  background-color: url('image/submit-button.png');*/
+    background-image: url('image/submit-button.png');
     text-indent:-9999px;
-    border:none;
+    border: none;
     margin-top:20px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 	#submit:hover {
