@@ -59,10 +59,10 @@ input:focus, textarea:focus {
 #submit {
     width:127px;
     height:38px;
-  /*  background-color: url('image/submit-button.png');*/
-    background-image: url('image/submit-button.png');
+    /* background-color: black; */
+    body { background-image: url('img/submit-button.png') }
     text-indent:-9999px;
-    border: none;
+    border:1px solid #dedede; /* Not sure why it's red, it's not red up above */
     margin-top:20px;
     cursor: pointer;
 }
