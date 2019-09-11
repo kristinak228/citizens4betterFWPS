@@ -1,20 +1,15 @@
 <?php
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-    $from = $email; 
-    $to = '4betterschools@comcast.net'; 
-    $subject = 'FWPS - New Email From Reader';
+    if (isset($_POST['submit'])){
+        $name = $_POST['name'];
+        $mailFrom = $_POST['email'];
+        $message = $_POST['message'];
 
-    $body = "From: $name\n E-Mail: $email\n Message:\n $message";
-?>
+        $subject = "FWPS - New Email From Reader";
+        $mailTo = "4betterschools@comcast.net";
+        $headers = "From: ".$mailFrom;
+        $txt = "You have received an email from ".$name.".\n\n".$message;
 
-<?php
-if ($_POST['submit']) {
-    if (mail ($to, $subject, $body, $from)) { 
-        echo '<p>Your message has been sent!</p>';
-    } else { 
-        echo '<p>Something went wrong, go back and try again!</p>'; 
-    }
-}
+        mail($mailTo, $subject, $txt, $headers);
+        header("Location: subpage-six.html?mailsent");
+    } 
 ?>

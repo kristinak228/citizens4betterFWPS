@@ -1,6 +1,7 @@
 label {
     display:block;
     margin-top:20px;
+    text-align: left;
     letter-spacing:2px;
 }
 
@@ -8,13 +9,15 @@ label {
 .body {
     display:block;
     margin:0 auto;
-    width:576px;
+    width:440px; /*576*/
+    text-align: center; /* mine */
 }
 
 /* Centre the form within the page */
 form {
     margin:0 auto;
-    width:459px;
+    width:459px; 
+    display: inline-block;
 }
 
 /* Style the text boxes */
